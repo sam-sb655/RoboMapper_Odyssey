@@ -28,7 +28,7 @@
 ## 📁 Project Structure
 
 ```
-RoboMapper_Odyssey_Milestone1/
+RoboMapper_Odyssey/
 ├── 1_Code_Submission/
 │   ├── milestone1_code.zip
 │   ├── README.md
