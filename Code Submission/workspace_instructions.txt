@@ -1,0 +1,50 @@
+===========================
+RoboMapper Odyssey - ROS2 Workspace Instructions
+===========================
+
+Tested On:
+- Ubuntu 22.04 (Live USB)
+- ROS2 Humble Hawksbill
+- RViz2
+
+Pre-requisites:
+---------------
+Ensure you have the following installed:
+- ROS2 Humble
+- xacro
+- joint_state_publisher
+- robot_state_publisher
+- teleop_twist_keyboard
+
+Installation:
+-------------
+
+1. Extract the contents of `milestone1_code.zip` into your ROS2 workspace `src/` directory.
+
+2. Navigate to workspace root:
+    cd ~/ros2_ws
+
+3. Build the workspace:
+    colcon build --packages-select my_basic_bot_description my_basic_bot_bringup teleop_twist_keyboard
+
+4. Source the environment:
+    source install/setup.bash
+
+Running the Demo:
+-----------------
+
+1. View the robot in RViz:
+    ros2 launch my_basic_bot_description view_robot.launch.py
+
+2. Open a new terminal, source again, and start teleoperation:
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+Notes:
+------
+- Ensure `/robot_description` and `/cmd_vel` are correctly being published.
+- The robot will move inside RViz visualisation based on keyboard input.
+- RViz Fixed Frame: `base_link`, Topic: `/robot_description`, Odometry: `/odom`
+
+For errors or troubleshooting, see: `2_Documentation/error_logs/installation_failures.txt`
+
+
