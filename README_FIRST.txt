@@ -13,8 +13,6 @@ IMPORTANT INSTRUCTIONS:
 We were unable to proceed beyond Milestone 1 due to environment storage limitations during live USB deployment.
 
 We hope you appreciate our efforts and the technical depth we achieved in Milestone 1.
-
-Team: Open Benne Dosa  
-Lead: Soumya Basuli
+Author: Soumya Basuli
 
 
